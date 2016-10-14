@@ -1,6 +1,6 @@
-# GetTestVersionInformation
-##获取设备软件版本信息，包括设备ID、Android版本号、机型、软件版本号
-##获取APP版本号
-###脚本使用方法：
-Python版本：需要查询哪个APP时，请将其包名配置到appPackage数组中
-Java版本：new ActivityName().testPackageName()进行配置
+#获取设备软件版本信息和APP版本的测试脚本  
+##脚本使用方法：  
+1）Python版本  
+使用appPackage数组来存储APP包名，需要查询哪个APP时，请在GetTestVersionInformation.py文件中配置其 包名  
+2）Java版本  
+使用ArrayList来存储APP包名，需要查询哪个APP时，请在new ActivityName().testPackageName()进行配置其包名  
