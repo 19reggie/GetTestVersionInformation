@@ -23,8 +23,8 @@ public class GetApplication {
 		String[][] str = new String[arr.size()][j];
 		for (int i = 0; i < arr.size(); i++) {
 			Application application = new Application();
-			application.setPackageName(arr.get(i));// APP°üÃû
-			application.setAppVersion(new AppInformation().getAppVersion(arr.get(i)));// APP°æ±¾ºÅ
+			application.setPackageName(arr.get(i));
+			application.setAppVersion(new AppInformation().getAppVersion(arr.get(i)));
 			str[i][0] = application.getPackageName();
 			str[i][1] = application.getAppVersion();
 		}
