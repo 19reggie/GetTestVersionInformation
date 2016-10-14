@@ -5,73 +5,36 @@ import java.util.HashMap;
 
 /**
  * 
- * TODO<ÅäÖÃÓ¦ÓÃµÄActivityName>
+ * TODO<APPçš„PackageName>
  * 
  * @author: Reggie
- * @data: 2016Äê10ÔÂ12ÈÕ ÉÏÎç11:10:32
+ * @data: 2016å¹´10æœˆ12æ—¥ ä¸Šåˆ11:10:32
  * @version: V1.0
  */
 public class ActivityName {
 
 	/**
 	 * 
-	 * TODO<Ê¹ÓÃHashMapÀ´´æ´¢> HashMapµÄÊ¹ÓÃ·½·¨
-	 * ²Î¿¼http://www.trinea.cn/android/hashmap-loop-performance/
-	 * 
-	 * @return
-	 * @throw
-	 * @return HashMap<String,String>
-	 */
-	public static HashMap<String, String> testData() {
-		HashMap<String, String> hashMap = new HashMap<String, String>();
-		hashMap.put("Phone", "com.android.dialer/com.android.dialer.DialtactsActivity");
-		hashMap.put("Messaging", "com.android.mms/com.android.messaging.ui.conversationlist.ConversationListActivity");
-		hashMap.put("Settings", "com.android.settings/com.android.settings.Settings");
-		hashMap.put("Clock", "com.android.deskclock/com.android.deskclock.DeskClock");
-		hashMap.put("Data traffic management", "com.android.netmannager/com.android.netmannager.MainActivity");
-		hashMap.put("Contacts", "com.android.contacts/com.android.contacts.activities.PeopleActivity");
-		return hashMap;
-	}
-
-	/**
-	 * 
-	 * TODO<Ê¹ÓÃArrayListÀ´´æ´¢>
+	 * TODO<ä½¿ç”¨ArrayListæ¥å­˜å‚¨>
 	 * 
 	 * @return
 	 * @throw
 	 * @return ArrayList<String>
 	 */
-	public ArrayList<String> testData2() {
-		ArrayList<String> arr = new ArrayList<String>();
-		arr.add("com.android.dialer/com.android.dialer.DialtactsActivity");// µç»°
-		arr.add("com.android.mms/com.android.messaging.ui.conversationlist.ConversationListActivity");// ĞÅÏ¢
-		arr.add("com.android.settings/com.android.settings.Settings");// ÉèÖÃ
-		arr.add("com.android.deskclock/com.android.deskclock.DeskClock");// Ê±ÖÓ
-		arr.add("com.android.netmannager/com.android.netmannager.MainActivity");// Á÷Á¿¹ÜÀí
-		arr.add("com.android.contacts/com.android.contacts.activities.PeopleActivity");// ÁªÏµÈË
-		arr.add("com.talpa.battery/com.talpa.battery.activity.MainActivity");// Ê¡µç¹ÜÀí
-		return arr;
-	}
-
 	public ArrayList<String> testPackageName() {
 		ArrayList<String> arr = new ArrayList<String>();
-		arr.add("com.android.dialer");// µç»°
-		arr.add("com.android.mms");// ĞÅÏ¢
-		arr.add("com.android.settings");// ÉèÖÃ
-		arr.add("com.android.deskclock");// Ê±ÖÓ
-		arr.add("com.android.netmannager");// Á÷Á¿¹ÜÀí
-		arr.add("com.android.contacts");// ÁªÏµÈË
-		arr.add("com.talpa.battery");// Ê¡µç¹ÜÀí
+		arr.add("com.android.dialer");// ç”µè¯
+		arr.add("com.android.mms");// ä¿¡æ¯
+		arr.add("com.android.settings");// è®¾ç½®
+		arr.add("com.android.deskclock");// æ—¶é’Ÿ
+		arr.add("com.android.netmannager");// æµé‡ç®¡ç†
+		arr.add("com.android.contacts");// è”ç³»äºº
+		arr.add("com.talpa.battery");// çœç”µç®¡ç†
 		arr.add("tran.com.android.taplaota");// OTA
-		arr.add("com.android.systemui");// ËøÆÁºÍÍ¨ÖªÀ¸
-		arr.add("com.google.android.setupwizard");// ¿ª»úÏòµ¼
+		arr.add("com.android.systemui");// é”å±å’Œé€šçŸ¥æ 
+		arr.add("com.google.android.setupwizard");// å¼€æœºå‘å¯¼
 		return arr;
 
-	}
-
-	// ´ò¿ªÓ¦ÓÃ´ÎÊı
-	public int testCycle() {
-		return 15;
 	}
 
 }
