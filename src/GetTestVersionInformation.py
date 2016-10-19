@@ -14,7 +14,6 @@ Created on 2016-10-13
 import os,json,platform
 
 def getAppPackage():
-    
     appPackage = ['com.android.dialer',
                   'com.android.mms',
                   'com.android.settings',
@@ -46,7 +45,6 @@ def getAppVersion(packageName):
         return appVersion
 
 def deviceInformation():
-    
     deviceId=os.popen('adb devices').read().split("\n")[1].split("\t")[0].strip()
     #print deviceId
     androidVersion=os.popen('adb shell getprop ro.build.version.release').readline().strip()
@@ -73,8 +71,7 @@ def testDeviceInformation():
     print json.dumps(data,skipkeys=True)
 
 
-if __name__ == '__main__':
-    
+if __name__ == '__main__': 
     print u'---获取设备软件版本信息---'
     testDeviceInformation()
     print u'---获取APP版本号---'
