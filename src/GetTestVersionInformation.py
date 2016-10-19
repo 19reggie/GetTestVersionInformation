@@ -11,7 +11,7 @@ Created on 2016-10-13
 使用方法，需要查询哪个APP时，请将其包名配置到appPackage数组中
 '''
 
-import os,json
+import os,json,platform
 
 def getAppPackage():
     
