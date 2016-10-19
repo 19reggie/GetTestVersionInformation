@@ -28,8 +28,11 @@ def getAppPackage():
     return appPackage
 
 def getAppVersion(packageName):
-    
-    tmp=os.popen('adb shell dumpsys package '+packageName+' | grep versionName').readline()
+    if platform.system() == 'Windows':
+        seek = 'findstr'
+    else:
+        seek = 'grep'   
+    tmp=os.popen('adb shell dumpsys package '+packageName+' | '+seek+' versionName').readline()
     #print tmp
     appVersion=""
     #判断读取到的内容是否为空
